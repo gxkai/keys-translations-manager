@@ -8,3 +8,9 @@ app.css
 *.bat
 *.log
 *.bak
+/data/
+/.idea/.gitignore
+/.idea/ktm.iml
+/.idea/modules.xml
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/vcs.xml

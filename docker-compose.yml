@@ -9,7 +9,7 @@ services:
     environment:
       - DB=mongodb://ktm-db:27017/translationdb
     ports:
-      - "3000:3000"
+      - "39010:3000"
     depends_on:
       - ktm-db
   ktm-db:
@@ -17,6 +17,17 @@ services:
     container_name: ktm-db
     restart: always
     volumes:
-      - /data/db:/data/db
+      - ./data/db:/data/db
     ports:
-      - "27017:27017"
+      - "39011:27017"
+  mongo-gui:
+    container_name: "mongo-gui"
+    image: ugleiton/mongo-gui
+    restart: always
+    ports:
+      - "39012:4321"
+    environment:
+      - MONGO_URL=mongodb://ktm-db:27017
+    depends_on:
+      - ktm-db
+
