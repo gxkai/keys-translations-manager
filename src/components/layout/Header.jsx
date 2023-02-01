@@ -14,11 +14,11 @@ export default memo(function Header() {
 				<span className="icon-bar"/>
 				<span className="icon-bar"/>
 			</button>
-			<a className="navbar-brand" href="https://github.com/chejen/keys-translations-manager">
+			<span className="navbar-brand">
 				<i className="fab fa-github fa-fw"/>
 				{' '}
 				Keys-Translations Manager
-			</a>
+			</span>
 		</div>
 	);
 });
