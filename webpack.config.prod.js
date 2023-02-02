@@ -15,7 +15,7 @@ var config = {
 	output: {
 		path: dir.dist,
 		filename: "[name].js",
-		publicPath: '/public/js/'
+		publicPath: '/ktm/public/js/'
 	},
 	optimization: {
 		splitChunks: {
