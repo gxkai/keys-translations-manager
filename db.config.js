@@ -1,1 +1,1 @@
-module.exports = 'mongodb://translationdb@localhost:27017/translationdb';
+module.exports = 'mongodb://translationdb:f33fb62624@localhost:27017/translationdb';
