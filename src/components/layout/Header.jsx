@@ -15,7 +15,6 @@ export default memo(function Header() {
 				<span className="icon-bar"/>
 			</button>
 			<span className="navbar-brand">
-				<i className="fab fa-github fa-fw"/>
 				{' '}
 				Keys-Translations Manager
 			</span>

@@ -51,6 +51,7 @@ jobs:
           #https://github.com/appleboy/ssh-action/issues/21
           # 重启的脚本，根据自身情况做相应改动，一般要做的是migrate数据库以及重启服务器
           script: |
+            netstat -pl|grep 39010|awk -F/ '{print $1}'|awk '{print $7}'|xargs kill -9
             cd /www/project/ktm
             pnpm i
             pnpm build
