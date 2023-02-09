@@ -152,7 +152,7 @@ if (process.env.NODE_ENV === 'development') {
 	});
 }
 
-app.use('/public', express.static(path.join(__dirname, 'public')));
+app.use('/ktm/public', express.static(path.join(__dirname, 'public')));
 app.use("/api/translation", TranslationController);
 app.use("/api/history", HistoryController);
 app.use("/api/key", KeyController);
